@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+
+main {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.block {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(20, 120, 90);
+}
+
+.btn {
+    background-color: red;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
