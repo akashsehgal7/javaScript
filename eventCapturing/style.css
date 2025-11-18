@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+}
+.A {
+    width: 80%;
+    height: 80%;
+    background-color: rgb(128, 128, 128);
+}
+.B {
+    width: 80%;
+    height: 80%;
+    background-color: palegoldenrod;
+}
+.C {
+    width: 80%;
+    height: 80%;
+    background-color: aqua;
+}
