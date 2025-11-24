@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: black;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 10px;
+}
+
+.video {
+    overflow: hidden;
+    position: relative;
+}
+.card .video img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.card i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    /* background: linear-gradient(to right bottom, rgb(180, 11, 180),rgb(239, 6, 210)); */
+    background-image: url(https://preview.colorkit.co/gradient/f9ce34-ee2a7b-6228d7.png?size=wallpaper&scale=0.25&static=true);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0) rotate(-60deg);
+    transition: all cubic-bezier(.17,.67,.47,1.55) 0.4s;
+}
