@@ -5,6 +5,9 @@
     color: white;
 }
 
+body {
+    overflow: hidden;
+}
 html,body {
     height: 100%;
     width: 100%;

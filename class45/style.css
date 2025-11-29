@@ -62,3 +62,14 @@ button {
     font-weight: 100;
     font-family: monospace;
 }
+
+
+.card p {
+    text-align: center;
+    font-weight: 500;
+}
+
+.card p span {
+    font-size: 400;
+    color: royalblue;
+}
