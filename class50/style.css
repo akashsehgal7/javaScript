@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to right bottom,rgb(26,26,26), rgb(30,30,30));
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+
+section {
+    height: 100%;
+    width: 350px;
+    border-radius: 10px;
+    background-color: black;
+    margin: auto;
+}
+
+
+.all-reels {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.all-reels::-webkit-scrollbar {
+    display: none;
+}
+.reel {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.reel video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.reel .bottom {
+    width: 100%;
+    padding: 30px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.676));
+    position: absolute;
+    bottom: 0;
+}
+
+.bottom .user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.user img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bottom h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 10px;
+}
+
+.bottom>h3 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.user button {
+    padding: 2px 4px;
+    border-radius: 2px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    width: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    /* transform: translate(100%); */
+    padding: 20px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.right i {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.right h6 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.right>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.love {
+    color: red;
+}
+
+/* .like h4, .like h6 {
+    pointer-events: none;
+} */
+
+.right > div h4 {
+    pointer-events: none;
+}
+
+.right > div h6 {
+    pointer-events: none;
+}
+
+.comment-input {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    background-color: #111;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.commit-submit {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    background-color: lightgreen;
+    color: white;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    transform: scale(0.95) linear;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: monospace;
+    padding: 15px 30px;
+}
